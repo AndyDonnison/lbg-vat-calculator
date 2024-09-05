@@ -1,6 +1,6 @@
 // This adds install and test stages before static code analysis
 pipeline {
-  environment{}
+  environment{
   registry = "andydonnison1968/vatcal"
         registryCredentials = "dockerhub_id"
         dockerImage = ""
@@ -57,4 +57,5 @@ pipeline {
                     }
                 }
             }
+}
 }
